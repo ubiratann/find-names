@@ -1,5 +1,8 @@
 #!/bin/bash
 
+names=$1
+search=$2
+
 while IFS= read -r name || [ -n "$name" ];
 do
     # while IFS= read -r line || [ -n "$line" ];
@@ -13,6 +16,3 @@ do
     # done < "teste"
 done < "$names"
 
-
-names=$1
-search=$2
